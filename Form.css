@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px ;
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    font-family: sans-serif;
+    background-image: url()
+}
+.container {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 20px ;
+    min-height: 100vh;
+}
+.container>div{
+    flex: 1;
+    padding: 0 20px;
+}
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+p {
+    font-size: 15px;
+    opacity: 0.8px;
+}
+.box {
+    background-color: #fff;
+    border-radius: 5px ;
+    padding: 30px ;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+.box p {
+    margin: 0;
+}
+.box-blue  {
+    background-color: hsl(248, 32%, 49%);
+    padding: 15px;
+    margin-bottom: 20px ;
+    border-radius: 5px ;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    text-align: center ;
+}
+.form-control {
+    position: relative ;
+    margin-bottom: 30px ;
+}
+.form-control small {
+    position: absolute;
+    bottom:-20px;
+    right: 0;
+    opacity: 0;
+    text-align:center;
+}
+input {
+    border-radius:5px ;
+    border: 1.3px solid hsl(246, 25%, 77%);
+    font-family: sans-serif ;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+}
+button {
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px ;
+    border: 1px solid hsl(154, 59%, 45%);
+    box-shadow: 0 2px hsl(154, 59%, 45%);
+    color: #fff;
+    cursor: pointer;
+    display: block ;
+    font-family: sans-serif ;
+    font-weight: 500 ;
+    font-size: 14px;
+    padding: 15px 25px ;
+    width: 100%;
+}
+small {
+    display: block ;
+    color: #bbb;
+    font-size: 11px ;
+    font-weight: 500 ;
+    margin-top: 15px;
+}
+small a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    text-decoration: none;
+}
+@media screen and (max-width: 600) {
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center ;
+    }
+   .container {
+       flex-direction: column ;
+   }
+    
+} 
